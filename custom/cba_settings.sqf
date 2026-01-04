@@ -2,12 +2,12 @@
 // + Medic Settings mit Angel eingestellt)
 
 // .GTOM Settings
-force force GTO_addBasicDiary = true;
+force force GTO_addBasicDiary = false;
 force force GTO_addDynamicGroupsMenu = true;
 force force GTO_createMedicalCategory = false;
 force force GTO_InitFortify = false;
-force force GTO_persistentPlayer = false;
-force force GTO_SetPlayerRecoilCoefficient = 0.8;
+force force GTO_persistentPlayer = true;
+force force GTO_SetPlayerRecoilCoefficient = 0;
 force force GTO_UniformFix = false;
 
 // A3TI
@@ -285,7 +285,7 @@ force force ace_medical_ai_enabledFor = 2;
 force force ace_medical_ai_requireItems = 0;
 force force ace_medical_AIDamageThreshold = 1;
 force force ace_medical_alternateArmorPenetration = true;
-force force ace_medical_bleedingCoefficient = 0.5;
+force force ace_medical_bleedingCoefficient = 0.1;
 force force ace_medical_blood_bloodLifetime = 300;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_blood_maxBloodObjects = 50;
@@ -295,7 +295,7 @@ force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_fatalDamageSource = 0;
 force force ace_medical_fractureChance = 0.1;
 force force ace_medical_fractures = 1;
-force force ace_medical_ivFlowRate = 2;
+force force ace_medical_ivFlowRate = 10;
 force force ace_medical_limbDamageThreshold = 5;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
@@ -349,8 +349,8 @@ force force ace_medical_gui_openAfterTreatment = true;
 force force ace_medical_gui_peekMedicalInfoReleaseDelay = 1;
 force force ace_medical_gui_peekMedicalOnHit = true;
 force force ace_medical_gui_peekMedicalOnHitDuration = 1;
-force force ace_medical_gui_showBleeding = 0;
-force force ace_medical_gui_showBloodlossEntry = false;
+force force ace_medical_gui_showBleeding = 1;
+force force ace_medical_gui_showBloodlossEntry = true;
 force force ace_medical_gui_showDamageEntry = false;
 force force ace_medical_gui_tourniquetWarning = false;
 
@@ -397,11 +397,11 @@ force force ace_medical_treatment_treatmentTimeBodyBag = 5;
 force force ace_medical_treatment_treatmentTimeCoeffZeus = 10;
 force force ace_medical_treatment_treatmentTimeCPR = 15;
 force force ace_medical_treatment_treatmentTimeGrave = 5;
-force force ace_medical_treatment_treatmentTimeIV = 10;
+force force ace_medical_treatment_treatmentTimeIV = 2;
 force force ace_medical_treatment_treatmentTimeSplint = 2;
 force force ace_medical_treatment_treatmentTimeTourniquet = 2;
 force force ace_medical_treatment_treatmentTimeTrainedAutoinjector = 1;
-force force ace_medical_treatment_treatmentTimeTrainedIV = 12;
+force force ace_medical_treatment_treatmentTimeTrainedIV = 2;
 force force ace_medical_treatment_treatmentTimeTrainedSplint = 1;
 force force ace_medical_treatment_treatmentTimeTrainedTourniquet = 1;
 force force ace_medical_treatment_woundReopenChance = 0.5;
@@ -622,6 +622,50 @@ force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
+
+// Animated recoil coefficient changer
+force force RECOIL_accumulative_on = 1.005;
+force force RECOIL_AI_aimingAccuracyMax_on = 1;
+force force RECOIL_AI_aimingAccuracyMin_on = 1;
+force force RECOIL_AI_aimingShakeMax_on = 1;
+force force RECOIL_AI_aimingShakeMin_on = 1;
+force force RECOIL_AI_aimingSpeedMax_on = 1;
+force force RECOIL_AI_aimingSpeedMin_on = 1;
+force force RECOIL_AI_commandingMax_on = 1;
+force force RECOIL_AI_commandingMin_on = 1;
+force force RECOIL_AI_courageMax_on = 1;
+force force RECOIL_AI_courageMin_on = 1;
+force force RECOIL_AI_deviation = 0;
+force force RECOIL_AI_deviationDistance = 0;
+force force RECOIL_AI_deviationVisibility = 0;
+force force RECOIL_AI_enduranceMax_on = 1;
+force force RECOIL_AI_enduranceMin_on = 1;
+force force RECOIL_AI_generalMax_on = 1;
+force force RECOIL_AI_generalMin_on = 1;
+force force RECOIL_AI_on = true;
+force force RECOIL_AI_reloadSpeedMax_on = 1;
+force force RECOIL_AI_reloadSpeedMin_on = 1;
+force force RECOIL_AI_skill_on = true;
+force force RECOIL_AI_skilladd_on = true;
+force force RECOIL_AI_spotDistanceMax_on = 1;
+force force RECOIL_AI_spotDistanceMin_on = 1;
+force force RECOIL_AI_spotTimeMax_on = 1;
+force force RECOIL_AI_spotTimeMin_on = 1;
+force force RECOIL_force_on = 125;
+force force RECOIL_handgun_on = true;
+force force RECOIL_incrase_on = 0.5;
+force force RECOIL_limit_on = 1.8;
+force force RECOIL_negative_on = 0.17372;
+force force RECOIL_new_on = true;
+force force RECOIL_random_on = false;
+force force RECOIL_randomMax_on = 0.2;
+force force RECOIL_randomMid_on = 0.3;
+force force RECOIL_randomMin_on = 0.2;
+force force RECOIL_Smooth_on = true;
+force force RECOIL_variety_on = false;
+force force RECOIL_varietyC_on = 1;
+force force RECOIL_varietyCk_on = 2;
+force force SWAY_incrase_on = 0.1;
 
 // Community Base Addons
 cba_diagnostic_ConsoleIndentType = -1;
@@ -996,9 +1040,9 @@ zen_vision_enableWhiteHot = true;
 zen_vision_enableWhiteHotRedCold = false;
 
 // ACM: Airway
-force force ACM_airway_airwayCollapseChance = 0.75;
-force force ACM_airway_airwayObstructionBloodChance = 0.75;
-force force ACM_airway_airwayObstructionVomitChance = 0.75;
+force force ACM_airway_airwayCollapseChance = 0.5;
+force force ACM_airway_airwayObstructionBloodChance = 0.5;
+force force ACM_airway_airwayObstructionVomitChance = 0.5;
 force force ACM_airway_allowACCUVAC = 1;
 force force ACM_airway_allowNPA = 0;
 force force ACM_airway_allowOPA = 0;
@@ -1015,13 +1059,13 @@ force force ACM_airway_treatmentTimeSGA = 2;
 force force ACM_breathing_allowInspectChest = 0;
 force force ACM_breathing_allowNCD = 1;
 force force ACM_breathing_allowThoracostomy = 1;
-force force ACM_breathing_altitudeAffectOxygen = true;
+force force ACM_breathing_altitudeAffectOxygen = false;
 force force ACM_breathing_chestInjuryChance = 0.1;
 force force ACM_breathing_Hardcore_ChestInjury = false;
 force force ACM_breathing_Hardcore_HemothoraxBleeding = false;
-force force ACM_breathing_hemothoraxChance = 0.2;
+force force ACM_breathing_hemothoraxChance = 0.01;
 force force ACM_breathing_locationThoracostomy = 0;
-force force ACM_breathing_pneumothoraxDeteriorateChance = 0.5;
+force force ACM_breathing_pneumothoraxDeteriorateChance = 0.1;
 force force ACM_breathing_pneumothoraxEnabled = true;
 force force ACM_breathing_showCyanosisSeverity = true;
 force force ACM_breathing_treatmentTimeInspectChest = 1;
@@ -1060,10 +1104,10 @@ force force ACM_circulation_BloodType_Ratio_O = 39;
 force force ACM_circulation_BloodType_Ratio_ON = 5;
 force force ACM_circulation_cardiacArrestBleedRate = 0.01;
 force force ACM_circulation_cardiacArrestChance = 0.1;
-force force ACM_circulation_cardiacArrestDeteriorationRate = 0.5;
+force force ACM_circulation_cardiacArrestDeteriorationRate = 0.1;
 force force ACM_circulation_coagulationClotting = true;
 force force ACM_circulation_coagulationClottingAffectAI = false;
-force force ACM_circulation_CPREffectiveness = 1;
+force force ACM_circulation_CPREffectiveness = 4;
 force force ACM_circulation_customBloodTypeList_enable = false;
 force force ACM_circulation_Hardcore_PostCardiacArrest = false;
 force force ACM_circulation_IVComplications = false;
@@ -1082,7 +1126,7 @@ force force ACM_core_Dogtag_ShowWeight = true;
 force force ACM_core_ignoreIncompatibleAddonWarning = false;
 force force ACM_core_MedicAI_AllowIntermediateTreatment = true;
 force force ACM_core_treatmentTimeSutureStitch = 0.5;
-force force ACM_core_treatmentTimeTakeOffTourniquet = 2;
+force force ACM_core_treatmentTimeTakeOffTourniquet = 1;
 force force ACM_core_treatmentTimeWrappedStitch = 1;
 
 // ACM: Damage
@@ -1096,7 +1140,7 @@ force force ACM_damage_headTraumaCardiacArrestThreshold = 8;
 force force ACM_damage_headTraumaCardiacArrestThresholdAI = 1;
 force force ACM_damage_headTraumaDeathThreshold = 9;
 force force ACM_damage_headTraumaDeathThresholdAI = 1;
-force force ACM_damage_internalBleedingChanceMultiplier = 0.5;
+force force ACM_damage_internalBleedingChanceMultiplier = 0.1;
 
 // ACM: Disability
 force force ACM_disability_allowFractureRealignment = 1;
@@ -1114,7 +1158,7 @@ force force ACM_evacuation_clearCasualtyLoadout = false;
 force force ACM_evacuation_convertedCasualtyDeathPenalty = 1;
 force force ACM_evacuation_enable = true;
 force force ACM_evacuation_locationConvert = 0;
-force force ACM_evacuation_requireAntibiotics = true;
+force force ACM_evacuation_requireAntibiotics = false;
 force force ACM_evacuation_ticketCountCasualty = 5;
 force force ACM_evacuation_ticketCountRespawn = 20;
 
@@ -1123,5 +1167,5 @@ force force ACM_gui_overlayBodyPart = true;
 force force ACM_gui_showActionItemIcons = true;
 force force ACM_gui_showExactPainAmount = false;
 force force ACM_gui_showFracture = true;
-force force ACM_gui_showInactiveStatuses = false;
+force force ACM_gui_showInactiveStatuses = true;
 force force ACM_gui_showPatientSideLabels = true;
