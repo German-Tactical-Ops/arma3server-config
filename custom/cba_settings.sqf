@@ -1,12 +1,11 @@
 // Base Settings
-// + Medic Settings mit Angel eingestellt)
 
 // .GTOM Settings
 force force GTO_addBasicDiary = false;
-force force GTO_addDynamicGroupsMenu = true;
+force force GTO_addDynamicGroupsMenu = false;
 force force GTO_createMedicalCategory = false;
 force force GTO_InitFortify = false;
-force force GTO_persistentPlayer = true;
+force force GTO_persistentPlayer = false;
 force force GTO_SetPlayerRecoilCoefficient = 0;
 force force GTO_UniformFix = false;
 
@@ -1156,7 +1155,7 @@ force force ACM_disability_treatmentTimeWrapSplint = 2;
 force force ACM_evacuation_allowConvert = 2;
 force force ACM_evacuation_clearCasualtyLoadout = false;
 force force ACM_evacuation_convertedCasualtyDeathPenalty = 1;
-force force ACM_evacuation_enable = true;
+force force ACM_evacuation_enable = false;
 force force ACM_evacuation_locationConvert = 0;
 force force ACM_evacuation_requireAntibiotics = false;
 force force ACM_evacuation_ticketCountCasualty = 5;
